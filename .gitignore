@@ -1,21 +1,56 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+.DS_STORE
 
-# compiled output
+# Don’t commit the following directories created by pub.
+packages
+pubspec.lock
+.pub
+.packages
 
-# dependencies
-/node_modules
+/dist/
+.buildlog
+node_modules
+bower_components
 
-# IDEs and editors
-/.idea
 
-# misc
+# Files created by the template compiler
+**/*.ngfactory.ts
+**/*.css.ts
+**/*.css.shim.ts
+
+# Or type definitions we mirror from github
+# (NB: these lines are removed in publish-build-artifacts.sh)
+**/typings/**/*.d.ts
+**/typings/tsd.cached.json
+
+# Include when developing application packages.
+pubspec.lock
+.c9
+.idea/
+.settings/
+*.swo
+modules/.settings
+.vscode
+modules/.vscode
+
+# Don't check in secret files
+*secret.js
+
+# Ignore npm debug log
 npm-debug.log
-/typings
 
-# e2e
+/docs/bower_components/
 
-#System Files
-.DS_Store
-/*.yaml
-*.js
-*.js.map
+# build-analytics
+.build-analytics
+
+# built dart payload tests
+/modules_dart/payload/**/build
+
+# rollup-test output
+/modules/rollup-test/dist/
+
+*.yaml
+app/*.js
+app/*.js.map
+app/sector/*.js
+app/sector/*.js.map
