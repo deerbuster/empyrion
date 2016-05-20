@@ -17,3 +17,5 @@ npm-debug.log
 #System Files
 .DS_Store
 /*.yaml
+*.js
+*.js.map
